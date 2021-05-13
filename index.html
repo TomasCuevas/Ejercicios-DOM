@@ -14,7 +14,7 @@
             <h1 class="title">Ejercicios del DOM</h1>
         </div>
         <section id="nav" class="nav">
-            <a href="#section__one" class="nav__item">Sección 1</a>
+            <a href="#section__one" class="nav__item">Reloj Digital y Alarma Sonora</a>
             <a href="#section__two" class="nav__item">Sección 2</a>
             <a href="#section__three" class="nav__item">Sección 3</a>
             <a href="#section__four" class="nav__item">Sección 4</a>
@@ -26,9 +26,19 @@
         <section id="icon" class="icon">
             <i id="icon__bar" class="fas fa-bars bars__icon"></i>
         </section>
-
+        <audio src="/asssets/sounds/alarm_sound.mp3" id="sound__alarm" loop></audio>
         <section id="section__one" class="section__one">
-            <h2 class="subtitle">Sección 1</h2>
+            <h2 class="subtitle">Reloj Digital y Alarma Sonora</h2>
+            <div class="time">
+                <p id="time__live" class="time__live"></p>
+                
+                <div class="btn__time">
+                    <button type="button" id="start__clock" class="btn__clock">Iniciar Reloj</button>
+                    <button type="button" id="stop__clock" class="btn__clock" disabled>Detener Reloj</button>
+                    <button type="button" id="start__alarm" class="btn__clock">Iniciar Alarma</button>
+                    <button type="button" id="stop__alarm" class="btn__clock" disabled>Detener Alarma</button>
+                </div>
+            </div>
         </section>
         <section id="section__two" class="section__two">
             <h2 class="subtitle">Sección 2</h2>
@@ -46,7 +56,7 @@
     </main>
 
 
-
     <script src="/index.js"></script>
+    <script src="/modulos/time.js"></script>
 </body>
 </html>
