@@ -15,7 +15,7 @@
         </div>
         <section id="nav" class="nav">
             <a href="#section__one" class="nav__item">Reloj Digital y Alarma Sonora</a>
-            <a href="#section__two" class="nav__item">Sección 2</a>
+            <a href="#section__two" class="nav__item">Eventos del Teclado</a>
             <a href="#section__three" class="nav__item">Sección 3</a>
             <a href="#section__four" class="nav__item">Sección 4</a>
             <a href="#section__five" class="nav__item">Sección 5</a>
@@ -26,9 +26,9 @@
         <section id="icon" class="icon">
             <i id="icon__bar" class="fas fa-bars bars__icon"></i>
         </section>
-        <audio src="/asssets/sounds/alarm_sound.mp3" id="sound__alarm" loop></audio>
         <section id="section__one" class="section__one">
             <h2 class="subtitle">Reloj Digital y Alarma Sonora</h2>
+            <audio src="/asssets/sounds/alarm_sound.mp3" id="sound__alarm" loop></audio>
             <div class="time">
                 <p id="time__live" class="time__live"></p>
                 
@@ -41,7 +41,12 @@
             </div>
         </section>
         <section id="section__two" class="section__two">
-            <h2 class="subtitle">Sección 2</h2>
+            <h2 class="subtitle">Eventos del Teclado</h2>
+            <div id="game__zone-border" class="game__zone-border">
+                <div id="game__zone" class="game__zone">
+                    <div id="game__ball" class="game__ball"></div>
+                </div>
+            </div>
         </section>
         <section id="section__three" class="section__three">
             <h2 class="subtitle">Sección 3</h2>
@@ -58,5 +63,6 @@
 
     <script src="/index.js"></script>
     <script src="/modulos/time.js"></script>
+    <script src="/modulos/keyEvent.js"></script>
 </body>
 </html>
