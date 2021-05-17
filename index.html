@@ -16,7 +16,7 @@
         <section id="nav" class="nav">
             <a href="#section__one" class="nav__item">Reloj Digital y Alarma Sonora</a>
             <a href="#section__two" class="nav__item">Eventos del Teclado</a>
-            <a href="#section__three" class="nav__item">Sección 3</a>
+            <a href="#section__three" class="nav__item">Cuenta Regresiva (countdown)</a>
             <a href="#section__four" class="nav__item">Sección 4</a>
             <a href="#section__five" class="nav__item">Sección 5</a>
         </section>
@@ -31,7 +31,6 @@
             <audio src="/asssets/sounds/alarm_sound.mp3" id="sound__alarm" loop></audio>
             <div class="time">
                 <p id="time__live" class="time__live"></p>
-                
                 <div class="btn__time">
                     <button type="button" id="start__clock" class="btn__clock">Iniciar Reloj</button>
                     <button type="button" id="stop__clock" class="btn__clock" disabled>Detener Reloj</button>
@@ -49,7 +48,8 @@
             </div>
         </section>
         <section id="section__three" class="section__three">
-            <h2 class="subtitle">Sección 3</h2>
+            <h2 class="subtitle">Cuenta Regresiva (countdown)</h2>
+            <p id="time__accountant" class="time__accountant"></p>
         </section>
         <section id="section__four" class="section__four">
             <h2 class="subtitle">Sección 4</h2>
@@ -64,5 +64,6 @@
     <script src="/index.js"></script>
     <script src="/modulos/time.js"></script>
     <script src="/modulos/keyEvent.js"></script>
+    <script src="/modulos/cuentaRegresiva.js"></script>
 </body>
 </html>
