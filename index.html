@@ -9,7 +9,8 @@
     <script src="https://kit.fontawesome.com/2b03fc5687.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
+    <div id="start" class="start"></div>
+    <header id="header" class="header">
         <div class="div__link">
             <h1 class="title">Ejercicios del DOM</h1>
         </div>
@@ -26,36 +27,45 @@
         <section id="icon" class="icon">
             <i id="icon__bar" class="fas fa-bars bars__icon"></i>
         </section>
-        <section id="section__one" class="section__one">
-            <h2 class="subtitle">Reloj Digital y Alarma Sonora</h2>
+        <section id="icon__back" class="icon__back">
+            <a href="#start">
+                <i id="top__icon" class="fas fa-arrow-up top__icon"></i>
+            </a>
+        </section>
+        <section id="change__theme" class="change__theme">
+            <i id="icon__theme" class="fas fa-moon icon__theme"></i>
+        </section>
+
+        <section id="section__one" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Reloj Digital y Alarma Sonora</h2>
             <audio src="/asssets/sounds/alarm_sound.mp3" id="sound__alarm" loop></audio>
             <div class="time">
-                <p id="time__live" class="time__live"></p>
+                <p id="time__live" data-darkmode-subtitle class="time__live"></p>
                 <div class="btn__time">
-                    <button type="button" id="start__clock" class="btn__clock">Iniciar Reloj</button>
-                    <button type="button" id="stop__clock" class="btn__clock" disabled>Detener Reloj</button>
-                    <button type="button" id="start__alarm" class="btn__clock">Iniciar Alarma</button>
-                    <button type="button" id="stop__alarm" class="btn__clock" disabled>Detener Alarma</button>
+                    <button type="button" id="start__clock" data-darkmode-clock class="btn__clock">Iniciar Reloj</button>
+                    <button type="button" id="stop__clock" data-darkmode-clock class="btn__clock" disabled>Detener Reloj</button>
+                    <button type="button" id="start__alarm" data-darkmode-clock class="btn__clock">Iniciar Alarma</button>
+                    <button type="button" id="stop__alarm" data-darkmode-clock class="btn__clock" disabled>Detener Alarma</button>
                 </div>
             </div>
         </section>
-        <section id="section__two" class="section__two">
-            <h2 class="subtitle">Eventos del Teclado</h2>
+        <section id="section__two" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Eventos del Teclado</h2>
             <div id="game__zone-border" class="game__zone-border">
                 <div id="game__zone" class="game__zone">
                     <div id="game__ball" class="game__ball"></div>
                 </div>
             </div>
         </section>
-        <section id="section__three" class="section__three">
-            <h2 class="subtitle">Cuenta Regresiva (countdown)</h2>
-            <p id="time__accountant" class="time__accountant"></p>
+        <section id="section__three" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Cuenta Regresiva (countdown)</h2>
+            <p id="time__accountant" data-darkmode-subtitle class="time__accountant"></p>
         </section>
-        <section id="section__four" class="section__four">
-            <h2 class="subtitle">Sección 4</h2>
+        <section id="section__four" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 4</h2>
         </section>
-        <section id="section__five" class="section__five">
-            <h2 class="subtitle">Sección 5</h2>
+        <section id="section__five" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 5</h2>
         </section>
 
     </main>
@@ -65,5 +75,7 @@
     <script src="/modulos/time.js"></script>
     <script src="/modulos/keyEvent.js"></script>
     <script src="/modulos/cuentaRegresiva.js"></script>
+    <script src="/modulos/backTopEvent.js"></script>
+    <script src="/modulos/darkTheme.js"></script>
 </body>
 </html>

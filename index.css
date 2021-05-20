@@ -27,7 +27,18 @@
 }
 
 /* SECTION */
-.subtitle {
+.section__background{
+    height: 100vh;
+    background-color: #fff;
+    border-bottom: 5px solid #000;
+    transition-duration: .5s;
+}
+.background__darkmode{
+    background-color: #113;
+    border-bottom: 5px solid #fff;
+    transition-duration: .5s;
+}
+.subtitle{
     padding-top: 100px;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
@@ -35,33 +46,17 @@
     text-align: center;
     text-transform: uppercase;
 }
-.section__one{
-    height: 100vh;
-    background-color: #f00a;
-}
-.section__two{
-    height: 100vh;
-    background-color: #0f0;
-}
-.section__three{
-    height: 100vh;
-    background-color: #00f;
-}
-.section__four{
-    height: 100vh;
-    background-color: #ff0;
-}
-.section__five{
-    height: 100vh;
-    background-color: #0ff;
+.subtitle__darkmode{
+    color: #fff !important;
 }
 
-/* ICON */
+/* ICON NAV */
 .icon{
     position: sticky;
     top: 85vh;
     left: 92vw;
     font-size: 40px;
+    cursor: pointer;
 }
 .bars__icon{
     position: absolute;
@@ -69,9 +64,72 @@
     left: 90vw;
     width: 40px;
     height: 40px;
+    color: #000;
     background-color: #ff0;
     border-radius: 17px;
     text-align: center;
+    transition-duration: .7s;
+}
+.bars__icon:hover{
+    color: #ff0;
+    background-color: #000;
+}
+
+/* ICON BACK TOP */
+.icon__back{
+    display: none;
+}
+.icon__back-active{
+    display: block;
+    opacity: 100;
+    visibility: visible;
+    position: sticky;
+    top: 85vh;
+    font-size: 40px;
+    cursor: pointer;
+}
+.top__icon{
+    position: absolute;
+    padding: 15px;
+    left: 82vw;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    background-color: #ff0;
+    border-radius: 17px;
+    text-align: center;
+    transition-duration: .7s;
+}
+.top__icon:hover{
+    color: #ff0;
+    background-color: #000;
+}
+
+/* ICON CHANGE THEME */
+.change__theme{
+    display: block;
+    opacity: 100;
+    visibility: visible;
+    position: sticky;
+    top: 85vh;
+    font-size: 40px;
+    cursor: pointer;
+}
+.icon__theme{
+    position: absolute;
+    padding: 15px;
+    left: 1vw;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    background-color: #ff0;
+    border-radius: 17px;
+    text-align: center;
+    transition-duration: .7s;
+}
+.icon__theme:hover{
+    color: #ff0;
+    background-color: #000;
 }
 
 /* NAV */
@@ -129,15 +187,31 @@
     font-weight: 700;
     transition-duration: .5s;
 }
+.time__live-active-darkmode{
+    color: #fff;
+}
 .btn__clock{
     margin: 0 10px;
     width: 110px;
     height: 35px;
     border: 2px solid #000;
+    cursor: pointer;
 }
 .btn__clock:disabled{
     color: #0005;
     background-color: #ccc;
+    border: 2px solid #fff;
+    cursor: default;
+}
+.btn__clock-darkmode{
+    color: #fff;
+    background-color: #557;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.btn__clock-darkmode:disabled{
+    color: #0005;
+    background-color: #aac;
     border: 2px solid #fff;
 }
 
@@ -170,6 +244,12 @@
 
 /* CUENTA REGRESIVA */
 .time__accountant{
+    margin-top: 40px;
+    font-size: 25px;
+    color: #222;
+    text-align: center;
+}
+.time__accountant-darkmode{
     margin-top: 40px;
     font-size: 25px;
     color: #fff;

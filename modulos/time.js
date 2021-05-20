@@ -23,7 +23,7 @@ document.addEventListener("click",(e) => {
     if (e.target.matches("#start__alarm")) {
         alarmTime = setTimeout(() => {
             document.querySelector("#sound__alarm").play();
-        },500)
+        },200)
         document.querySelector("#start__alarm").setAttribute("disabled",true);
         document.querySelector("#stop__alarm").removeAttribute("disabled");
     }
