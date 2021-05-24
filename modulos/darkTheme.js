@@ -10,12 +10,14 @@ const darkmodeTrue = () => {
     $DARKMODE_SECTION.forEach((e) => e.classList.add("background__darkmode"));
     $DARKMODE_SUBTITLE.forEach((e) => e.classList.add("subtitle__darkmode"));
     $DARKMODE_BTN_CLOCK.forEach((e) => e.classList.add("btn__clock-darkmode"));
+    document.querySelector("#icon__theme").classList.replace("fa-moon","fa-sun")
 }
 
 const darkmodeFalse = () => {
     $DARKMODE_SECTION.forEach((e) => e.classList.remove("background__darkmode"))
     $DARKMODE_SUBTITLE.forEach((e) => e.classList.remove("subtitle__darkmode"))
     $DARKMODE_BTN_CLOCK.forEach((e) => e.classList.remove("btn__clock-darkmode"));
+    document.querySelector("#icon__theme").classList.replace("fa-sun","fa-moon")
 }
 
 

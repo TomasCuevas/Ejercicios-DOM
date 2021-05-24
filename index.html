@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas DOM</title>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/2b03fc5687.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,8 +18,13 @@
             <a href="#section__one" class="nav__item">Reloj Digital y Alarma Sonora</a>
             <a href="#section__two" class="nav__item">Eventos del Teclado</a>
             <a href="#section__three" class="nav__item">Cuenta Regresiva (countdown)</a>
-            <a href="#section__four" class="nav__item">Sección 4</a>
-            <a href="#section__five" class="nav__item">Sección 5</a>
+            <a href="#section__four" class="nav__item">Responsive Desing with Javascript</a>
+            <a href="#section__five" class="nav__item">Responsive Tester</a>
+            <a href="#section__six" class="nav__item">Sección 6</a>
+            <a href="#section__seven" class="nav__item">Sección 7</a>
+            <a href="#section__eight" class="nav__item">Sección 8</a>
+            <a href="#section__nine" class="nav__item">Sección 9</a>
+            <a href="#section__ten" class="nav__item">Sección 10</a>
         </section>
     </header>
 
@@ -35,47 +40,54 @@
         <section id="change__theme" class="change__theme">
             <i id="icon__theme" class="fas fa-moon icon__theme"></i>
         </section>
+        <!-- SECTION 1 -->
 
-        <section id="section__one" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Reloj Digital y Alarma Sonora</h2>
-            <audio src="/asssets/sounds/alarm_sound.mp3" id="sound__alarm" loop></audio>
-            <div class="time">
-                <p id="time__live" data-darkmode-subtitle class="time__live"></p>
-                <div class="btn__time">
-                    <button type="button" id="start__clock" data-darkmode-clock class="btn__clock">Iniciar Reloj</button>
-                    <button type="button" id="stop__clock" data-darkmode-clock class="btn__clock" disabled>Detener Reloj</button>
-                    <button type="button" id="start__alarm" data-darkmode-clock class="btn__clock">Iniciar Alarma</button>
-                    <button type="button" id="stop__alarm" data-darkmode-clock class="btn__clock" disabled>Detener Alarma</button>
-                </div>
-            </div>
-        </section>
-        <section id="section__two" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Eventos del Teclado</h2>
-            <div id="game__zone-border" class="game__zone-border">
-                <div id="game__zone" class="game__zone">
-                    <div id="game__ball" class="game__ball"></div>
-                </div>
-            </div>
-        </section>
-        <section id="section__three" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Cuenta Regresiva (countdown)</h2>
-            <p id="time__accountant" data-darkmode-subtitle class="time__accountant"></p>
-        </section>
-        <section id="section__four" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Sección 4</h2>
-        </section>
+        <!-- SECTION 5 -->
         <section id="section__five" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Sección 5</h2>
+            <h2 class="subtitle" data-darkmode-subtitle>Responsive Tester</h2>
+            <div class="form__container">
+                <form class="form">
+                    <input type="text" name="url-site" id="url__input" class="input__form" placeholder="URL">
+                    <input type="text" name="width-window" id="width__window" class="input__form" placeholder="Anchura (px)">
+                    <input type="text" name="height-window" id="height__window" class="input__form" placeholder="Altura (px)">
+                    <div class="submit__container">
+                        <input type="submit" name="open-window" id="open__window" class="submit__form" value="Abrir">
+                        <input type="submit" name="close-window" id="close__window" class="submit__form" value="Cerrar">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- SECTION 6 -->
+        <section id="section__six" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 6</h2>
+        </section>
+        <!-- SECTION 7 -->
+        <section id="section__seven" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 7</h2>
+        </section>
+        <!-- SECTION 8 -->
+        <section id="section__eight" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 8</h2>
+        </section>
+        <!-- SECTION 9 -->
+        <section id="section__nine" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 9</h2>
+        </section>
+        <!-- SECTION 10 -->
+        <section id="section__ten" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 10</h2>
         </section>
 
     </main>
 
 
-    <script src="/index.js"></script>
-    <script src="/modulos/time.js"></script>
-    <script src="/modulos/keyEvent.js"></script>
-    <script src="/modulos/cuentaRegresiva.js"></script>
-    <script src="/modulos/backTopEvent.js"></script>
-    <script src="/modulos/darkTheme.js"></script>
+    <script type="module" src="index.js"></script>
+    <!-- <script type="module" src="modulos/responsiveDesing.js"></script> -->
+    <script type="module" src="modulos/responsiveTester.js"></script>
+    <!-- <script src="modulos/time.js"></script> -->
+    <!-- <script src="modulos/keyEvent.js"></script> -->
+    <!-- <script src="modulos/cuentaRegresiva.js"></script> -->
+    <script src="modulos/backTopEvent.js"></script>
+    <script src="modulos/darkTheme.js"></script>
 </body>
 </html>

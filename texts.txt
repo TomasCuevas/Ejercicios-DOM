@@ -1,0 +1,37 @@
+        <section id="section__one" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Reloj Digital y Alarma Sonora</h2>
+            <audio src="asssets/sounds/alarm_sound.mp3" id="sound__alarm" loop></audio>
+            <div class="time">
+                <p id="time__live" data-darkmode-subtitle class="time__live"></p>
+                <div class="btn__time">
+                    <button type="button" id="start__clock" data-darkmode-clock class="btn__clock">Iniciar Reloj</button>
+                    <button type="button" id="stop__clock" data-darkmode-clock class="btn__clock" disabled>Detener Reloj</button>
+                    <button type="button" id="start__alarm" data-darkmode-clock class="btn__clock">Iniciar Alarma</button>
+                    <button type="button" id="stop__alarm" data-darkmode-clock class="btn__clock" disabled>Detener Alarma</button>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 2 -->
+        <section id="section__two" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Eventos del Teclado</h2>
+            <div id="game__zone-border" class="game__zone-border">
+                <div id="game__zone" class="game__zone">
+                    <div id="game__ball" class="game__ball"></div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 3 -->
+        <section id="section__three" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Cuenta Regresiva (countdown)</h2>
+            <p id="time__accountant" data-darkmode-subtitle class="time__accountant"></p>
+        </section>
+        <!-- SECTION 4 -->
+        <section id="section__four" data-darkmode-section class="section__background">
+            <h2 class="subtitle" data-darkmode-subtitle>Responsive Desing with JavaScript</h2>
+            <div id="responsive__container" class="responsive__container">
+                <div id="element__container" class="element__container">
+                    <div id="video__content"></div>
+                    <div id="audio__content"></div>
+                </div>
+            </div>
+        </section>

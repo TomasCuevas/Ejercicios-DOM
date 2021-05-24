@@ -28,13 +28,13 @@
 
 /* SECTION */
 .section__background{
-    height: 100vh;
+    height: 1000px;
     background-color: #fff;
     border-bottom: 5px solid #000;
     transition-duration: .5s;
 }
 .background__darkmode{
-    background-color: #113;
+    background-color: #222e;
     border-bottom: 5px solid #fff;
     transition-duration: .5s;
 }
@@ -134,14 +134,18 @@
 
 /* NAV */
 .nav{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: -100vw;
     width: 80vw;
-    height: 100vh;
-    transition-duration: .5s;
+    height: 100%;
+    transition-duration: .7s;
 }
 .nav__active{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
@@ -151,8 +155,8 @@
 }
 .nav__item{
     display: inline-block;
+    flex-grow: 1;
     width: 80vw;
-    height: 20vh;
     line-height: 100px;
     font-size: 35px;
     color: #ff0;
@@ -160,7 +164,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    transition-duration: .5s;
+    transition-duration: .7s;
 }
 .nav__item:hover{
     color: #000;
@@ -261,4 +265,73 @@
     font-weight: 700;
     color: #f00;
     text-transform: uppercase;
+}
+
+/* RESPONSIVE DESING */
+.responsive__container{
+    margin: 0 auto;
+    width: 90%;
+}
+.element__container{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-top: 30px;
+    background-color: #f005;
+    justify-content: center;
+    align-items: center;
+}
+.element__container > * {
+    margin: 10px;
+}
+.element__container-mobile{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.element__container-mobile > * {
+    margin: 10px;
+}
+.element__mobile{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* RESPONSIVE TESTER */
+.form__container{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input__form{
+    margin: 6px 0;
+    padding-left: 10px;
+    width: 160px;
+    height: 25px;
+    border: 3px solid #000;
+}
+.input__form::placeholder{
+    color: #000;
+    font-weight: 600;
+}
+.submit__container{
+    display: flex;
+    justify-content: center;
+}
+.submit__form{
+    margin: 5px;
+    width: 82px;
+    height: 25px;
+    color: #000;
+    font-weight: 600;
+    border: 3px solid #555;
+    cursor: pointer;
 }
