@@ -411,3 +411,11 @@
         transform: translateY(0px);
     }
 }
+
+/* MEDIA DEVICE */
+.media__device{
+    display: flex;
+    margin: 30px auto;
+    width: 50%;
+    height: 400px;
+}

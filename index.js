@@ -1,5 +1,6 @@
 import deteccionDispositivo from "./modulos/deteccionDispositivo.js";
 import networkStatus from "./modulos/deteccionRed.js";
+import microphone from "./modulos/webCam.js";
 import {responsiveMedia} from "/modulos/responsiveDesing.js";
 
 document.addEventListener("click",(e) => {
@@ -30,3 +31,4 @@ document.addEventListener("DOMContentLoaded",() => {
 })
 
 networkStatus();
+microphone()
