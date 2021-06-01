@@ -419,3 +419,18 @@
     width: 50%;
     height: 400px;
 }
+
+/* GEOLOCALIZACION */
+.geolocation{
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    color: #fff;
+    font-size: 25px;
+    align-items: center;
+}
+
+.geolocation a {
+    margin: 20px auto;
+    color: #aaf;
+}

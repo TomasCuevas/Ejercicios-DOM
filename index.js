@@ -1,5 +1,6 @@
 import deteccionDispositivo from "./modulos/deteccionDispositivo.js";
 import networkStatus from "./modulos/deteccionRed.js";
+import getGeolocation from "./modulos/geolocalizacion.js";
 import microphone from "./modulos/webCam.js";
 import {responsiveMedia} from "/modulos/responsiveDesing.js";
 
@@ -28,6 +29,7 @@ responsiveMedia("element__container",
 
 document.addEventListener("DOMContentLoaded",() => {
     deteccionDispositivo("user__device");
+    getGeolocation("geolocation")
 })
 
 networkStatus();
