@@ -1,4 +1,5 @@
 import deteccionDispositivo from "./modulos/deteccionDispositivo.js";
+import networkStatus from "./modulos/deteccionRed.js";
 import {responsiveMedia} from "/modulos/responsiveDesing.js";
 
 document.addEventListener("click",(e) => {
@@ -27,3 +28,5 @@ responsiveMedia("element__container",
 document.addEventListener("DOMContentLoaded",() => {
     deteccionDispositivo("user__device");
 })
+
+networkStatus();
