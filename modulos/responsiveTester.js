@@ -11,7 +11,7 @@ document.addEventListener("click",(e) => {
     if(e.target.matches("#open__window")) {
         e.preventDefault();
         if (validarExpresion.type.test($WIDTH.value) && validarExpresion.type.test($HEIGHT.value)) {
-           tester = window.open($URL.value,"_self");
+            tester = window.open($URL.value,"tester",`width=${$WIDTH.value},height=${$HEIGHT.value}`)
         } else {
             alert("DEBES COLOCAR LA ANCHURA Y LA ALTURA");
         }
@@ -19,4 +19,4 @@ document.addEventListener("click",(e) => {
     if(e.target.matches("#close__window")) {
         tester.close();
     }
-});
+})
