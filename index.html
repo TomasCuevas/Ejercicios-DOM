@@ -27,7 +27,7 @@
             <a href="#section__seven" class="nav__item">Deteccion de RED</a>
             <a href="#section__eight" class="nav__item">Deteccion de CAMERA Y MICROFONO</a>
             <a href="#section__nine" class="nav__item">Geolocalización</a>
-            <a href="#section__ten" class="nav__item">Sección 10</a>
+            <a href="#section__ten" class="nav__item">Filtros de Busqueda</a>
             <a href="#section__eleven" class="nav__item">Sección 11</a>
             <a href="#section__twelve" class="nav__item">Sección 12</a>
         </section>
@@ -123,15 +123,42 @@
         </section>
         <!-- SECTION 10 -->
         <section id="section__ten" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Sección 10</h2>
+            <h2 class="subtitle subtitle--filter" data-darkmode-subtitle>Filtros de Busqueda</h2>
+            <input type="search" placeholder="Buscar..." id="card__filter" class="card__filter">
+            <article class="cards">
+                <figure class="card">
+                    <img src="https://placeimg.com/150/150/nature" class="card__img" alt="Nature">
+                    <figcaption class="card__figcaption">Nature</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/150/150/any" class="card__img" alt="Any">
+                    <figcaption class="card__figcaption">Any</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/150/150/tech" class="card__img" alt="Tech">
+                    <figcaption class="card__figcaption">Tech</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/150/150/animals" class="card__img" alt="Animals">
+                    <figcaption class="card__figcaption">Animals</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/150/150/people" class="card__img" alt="People">
+                    <figcaption class="card__figcaption">People</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/150/150/arch" class="card__img" alt="Architecture">
+                    <figcaption class="card__figcaption">Architecture</figcaption>
+                </figure>
+            </article>
         </section>
         <!-- SECTION 11 -->
         <section id="section__eleven" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Sección 10</h2>
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 11</h2>
         </section>
         <!-- SECTION 12 -->
         <section id="section__twelve" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Sección 10</h2>
+            <h2 class="subtitle" data-darkmode-subtitle>Sección 12</h2>
         </section>
 
     </main>
@@ -143,6 +170,7 @@
     <script type="module" src="modulos/deteccionDispositivo.js"></script>
     <script type="module" src="modulos/deteccionRed.js"></script>
     <script type="module" src="modulos/webCam.js"></script>
+    <script type="module" src="modulos/filtroBusquedas.js"></script>
     <script src="modulos/time.js"></script>
     <script src="modulos/keyEvent.js"></script>
     <script src="modulos/cuentaRegresiva.js"></script>
