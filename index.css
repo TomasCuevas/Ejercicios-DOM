@@ -8,13 +8,14 @@
 /* NAV */
 .header{
     position: fixed;
-    z-index: 1000;
+    z-index: 11000;
 }
 .div__link{
     display: flex;
     position: fixed;
     width: 100%;
     height: 80px;
+    top: 0;
     text-align: center;
     background-color: #fd5;
     justify-content: center;
@@ -28,10 +29,14 @@
 
 /* SECTION */
 .section__background{
+    margin-top: 80px;
     height: 800px;
     background-color: #fff;
     border-bottom: 5px solid #000;
     transition-duration: .5s;
+}
+#section__one{
+    margin-top: 80px;
 }
 .background__darkmode{
     background-color: #222e;
@@ -57,6 +62,7 @@
     left: 92vw;
     font-size: 40px;
     cursor: pointer;
+    z-index: 10000;
 }
 .bars__icon{
     position: absolute;
@@ -87,6 +93,7 @@
     top: 85vh;
     font-size: 40px;
     cursor: pointer;
+    z-index: 10000;
 }
 .top__icon{
     position: absolute;
@@ -114,6 +121,7 @@
     top: 85vh;
     font-size: 40px;
     cursor: pointer;
+    z-index: 10000;
 }
 .icon__theme{
     position: absolute;
@@ -471,4 +479,120 @@
     visibility: hidden;
     opacity: 0;
     order: 1;
+}
+
+/* SORTEO DIGITAL */
+.players{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 80%;
+    align-items: center;
+}
+.player{
+    display: block;
+    /* margin: 5px 0; */
+    width: 50%;
+    height: 25px;
+    color: #ff5555;
+    border: 1px solid #fff;
+    font-family: Roboto;
+    list-style: none;
+    text-align: center;
+    line-height: 25px;
+}
+.winner__btn{
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 25%;
+    color: #ff5555;
+    background-color: #222255;
+    font-family: Roboto;
+    cursor: pointer;
+}
+.winner__info{
+    display: none;
+}
+.winner__info-active{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    font-family: Roboto;
+    font-weight: 700;
+    color: #ff5555;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* SLIDER */
+.slider__container{
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+}
+.photo__container{
+    display: none;
+}
+.photo__container-left{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    animation-name: startAnimationLeft;
+    animation-duration: .5s;
+}
+.photo__container-right{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    animation-name: startAnimationRight;
+    animation-duration: .3s;
+}
+.img__slider{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.icon__direction{
+    font-size: 60px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 10px;
+    transition-duration: .3s;
+}
+.icon__direction:hover{
+    color: #fff;
+    background: #555;
+}
+.slider__left{
+    position: absolute;
+    top: calc(50% - 30px);
+    left: -40px;
+}
+.slider__right{
+    position: absolute;
+    top: calc(50% - 30px);
+    right: -40px;
+}
+
+@keyframes startAnimationLeft{
+    0%{
+        transform:translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes startAnimationRight{
+    0%{
+        transform:translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
 }

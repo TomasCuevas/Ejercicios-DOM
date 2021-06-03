@@ -2,6 +2,8 @@ import deteccionDispositivo from "./modulos/deteccionDispositivo.js";
 import networkStatus from "./modulos/deteccionRed.js";
 import searchfilters from "./modulos/filtroBusquedas.js";
 import getGeolocation from "./modulos/geolocalizacion.js";
+import applySlider from "./modulos/slider.js";
+import sorteoDigital from "./modulos/sorteo.js";
 import microphone from "./modulos/webCam.js";
 import {responsiveMedia} from "/modulos/responsiveDesing.js";
 
@@ -32,6 +34,8 @@ document.addEventListener("DOMContentLoaded",() => {
     deteccionDispositivo("user__device");
     getGeolocation("geolocation")
     searchfilters("card__filter","card")
+    sorteoDigital();
+    applySlider();
 })
 
 networkStatus();

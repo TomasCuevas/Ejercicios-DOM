@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas DOM</title>
-    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b03fc5687.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="status__red" class="status__red">
@@ -28,8 +29,11 @@
             <a href="#section__eight" class="nav__item">Deteccion de CAMERA Y MICROFONO</a>
             <a href="#section__nine" class="nav__item">Geolocalización</a>
             <a href="#section__ten" class="nav__item">Filtros de Busqueda</a>
-            <a href="#section__eleven" class="nav__item">Sección 11</a>
-            <a href="#section__twelve" class="nav__item">Sección 12</a>
+            <a href="#section__eleven" class="nav__item">Sorteo Digital</a>
+            <a href="#section__twelve" class="nav__item">Slider</a>
+            <a href="#section__thirteen" class="nav__item">SECTION 13</a>
+            <a href="#section__fourteen" class="nav__item">SECTION 14</a>
+            <a href="#section__fiveteen" class="nav__item">SECTION 15</a>
         </section>
     </header>
 
@@ -154,12 +158,60 @@
         </section>
         <!-- SECTION 11 -->
         <section id="section__eleven" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Sección 11</h2>
+            <h2 class="subtitle" data-darkmode-subtitle>Sorteo Digital</h2>
+            <ul class="players">
+                <li class="player">JavaScript</li>
+                <li class="player">C++</li>
+                <li class="player">Python</li>
+                <li class="player">PHP</li>
+                <li class="player">Kotlin</li>
+                <li class="player">Java</li>
+                <li class="player">Visual Basic</li>
+                <li class="player">C#</li>
+                <li class="player">C</li>
+                <li class="player">Ruby</li>
+                <li class="player">Go</li>
+                <li class="player">Rust</li>
+            </ul>
+            <button id="winner__btn" class="winner__btn">CONOCE EL GANADOR</button>
+            <p id="winner__info" class="winner__info"></p>
         </section>
         <!-- SECTION 12 -->
         <section id="section__twelve" data-darkmode-section class="section__background">
-            <h2 class="subtitle" data-darkmode-subtitle>Sección 12</h2>
+            <h2 class="subtitle" data-darkmode-subtitle>Slider</h2>
+            <div id="slider__container" class="slider__container">
+                <div id="slider__content" class="slider__content">
+                    <figure class="photo__container photo__container-right">
+                        <img src="/asssets/img/slider/pexels-adi-perets-4131101.jpg" class="img__slider">
+                    </figure>
+                    <figure class="photo__container">
+                        <img src="/asssets/img/slider/pexels-mary-cherkesova-4729058.jpg" class="img__slider">
+                    </figure>
+                    <figure class="photo__container">
+                        <img src="/asssets/img/slider/pexels-muhammadtaha-ibrahim-ma'aji-5599040.jpg" class="img__slider">
+                    </figure>
+                    <div class="slider__left">
+                        <span id="slider__left" class="material-icons icon__direction icon__direction">keyboard_arrow_left</span>
+                    </div>
+                    <div class="slider__right">
+                        <span id="slider__right" class="material-icons icon__direction">keyboard_arrow_right</span>
+                    </div>
+                </div>
+                
+            </div>
         </section>
+        <!-- SECTION 13 -->
+            <section id="section__thirteen" data-darkmode-section class="section__background">
+                <h2 class="subtitle" data-darkmode-subtitle>SECTION 13</h2>
+            </section>
+        <!-- SECTION 14 -->
+            <section id="section__fourteen" data-darkmode-section class="section__background">
+                <h2 class="subtitle" data-darkmode-subtitle>SECTION 14</h2>
+            </section>
+        <!-- SECTION 15 -->
+            <section id="section__fiveteen" data-darkmode-section class="section__background">
+                <h2 class="subtitle" data-darkmode-subtitle>SECTION 15</h2>
+            </section>
 
     </main>
 
@@ -171,6 +223,7 @@
     <script type="module" src="modulos/deteccionRed.js"></script>
     <script type="module" src="modulos/webCam.js"></script>
     <script type="module" src="modulos/filtroBusquedas.js"></script>
+    <script type="module" src="modulos/sorteo.js"></script>
     <script src="modulos/time.js"></script>
     <script src="modulos/keyEvent.js"></script>
     <script src="modulos/cuentaRegresiva.js"></script>
