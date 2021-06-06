@@ -2,7 +2,9 @@ import deteccionDispositivo from "./modulos/deteccionDispositivo.js";
 import networkStatus from "./modulos/deteccionRed.js";
 import searchfilters from "./modulos/filtroBusquedas.js";
 import getGeolocation from "./modulos/geolocalizacion.js";
+import applyIntersection from "./modulos/intersectionObserver.js";
 import applySlider from "./modulos/slider.js";
+import smartVideoVisibility from "./modulos/smartVideo.js";
 import sorteoDigital from "./modulos/sorteo.js";
 import microphone from "./modulos/webCam.js";
 import {responsiveMedia} from "/modulos/responsiveDesing.js";
@@ -15,6 +17,10 @@ document.addEventListener("click",(e) => {
     if (e.target.matches(".nav__item")) {
         document.querySelector("#icon__bar").classList.remove("fa-times");
         document.querySelector("#nav").classList.remove("nav__active")
+    }
+    if (!e.target.matches("#id") && !e.target.matches("#icon__bar")) {
+        document.getElementById("nav").classList.remove("nav__active");
+        document.getElementById("icon__bar").classList.remove("fa-times");
     }
 })
 
@@ -36,7 +42,16 @@ document.addEventListener("DOMContentLoaded",() => {
     searchfilters("card__filter","card")
     sorteoDigital();
     applySlider();
+    applyIntersection();
+    smartVideoVisibility();
 })
+
+const $SMARTS_VIOEO = document.querySelectorAll("[data-smart-video]")
+
+$SMARTS_VIOEO.forEach(el => {
+    let video = el;
+    video.volume = 0;
+});
 
 networkStatus();
 microphone()

@@ -29,7 +29,7 @@
 
 /* SECTION */
 .section__background{
-    margin-top: 80px;
+    /* opacity: .5; */
     height: 800px;
     background-color: #fff;
     border-bottom: 5px solid #000;
@@ -39,6 +39,7 @@
     margin-top: 80px;
 }
 .background__darkmode{
+    /* opacity: .5; */
     background-color: #222e;
     border-bottom: 5px solid #fff;
     transition-duration: .5s;
@@ -148,7 +149,7 @@
     top: 0;
     left: -100vw;
     width: 70vw;
-    height: 100vh;
+    height: calc(100vh - 80px);
     transition-duration: .7s;
 }
 .nav__active{
@@ -158,7 +159,7 @@
     top: 0;
     left: 0;
     width: 70vw;
-    height: 100vh;
+    height: calc(100vh - 80px);
 }
 .nav__item{
     display: inline-block;
@@ -577,8 +578,11 @@
 
 @keyframes startAnimationLeft{
     0%{
-        transform:translateX(200px);
+        transform:translateX(500px);
         opacity: 0;
+    }
+    50%{
+        transform:translateX(-50px);
     }
     100%{
         transform:translateX(0);
@@ -588,11 +592,66 @@
 
 @keyframes startAnimationRight{
     0%{
-        transform:translateX(-200px);
+        transform:translateX(-500px);
         opacity: 0;
+    }
+    50%{
+        transform:translateX(50px);
     }
     100%{
         transform:translateX(0);
         opacity: 1;
     }
+}
+
+/* INTERSECTION OBSERVER */
+.observer{
+    opacity: 1;
+    background-color: #777;
+    animation-name: colorcito;
+    animation-duration: .5s;
+}
+
+@keyframes colorcito{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.background__nav{
+    background-color: #ff0;
+    color: #000;
+}
+
+/* SMART VIDEO */
+.smart__video-container{
+    display: flex;
+    margin: 25px auto;
+    width: 100%;
+    justify-content: center;
+}
+.video__icon-container{
+    position: relative;
+}
+.icon__sound{
+    position: absolute;
+    top: 85%;
+    left: 90%;
+    opacity: .5;
+    color: #fff;
+    background-color: #222a;
+    font-size: 40px;
+    border-radius: 50%;
+    z-index: 2000;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.icon__sound:hover{
+    opacity: 1;
 }
