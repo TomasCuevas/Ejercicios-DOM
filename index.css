@@ -4,6 +4,18 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+.paragraph{
+    margin: 25px auto;
+    width: 80%;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+textarea{
+    resize: none;
+}
 
 /* NAV */
 .header{
@@ -30,7 +42,8 @@
 /* SECTION */
 .section__background{
     /* opacity: .5; */
-    height: 800px;
+    height: auto;
+    min-height: 700px;
     background-color: #fff;
     border-bottom: 5px solid #000;
     transition-duration: .5s;
@@ -638,12 +651,13 @@
 }
 .video__icon-container{
     position: relative;
+    overflow: hidden;
 }
 .icon__sound{
     position: absolute;
     top: 85%;
     left: 90%;
-    opacity: .5;
+    opacity: .3;
     color: #fff;
     background-color: #222a;
     font-size: 40px;
@@ -654,4 +668,119 @@
 }
 .icon__sound:hover{
     opacity: 1;
+}
+
+/* FORMULARIO */
+.formulario__container{
+    margin: 25px auto;
+    width: 80%;
+}
+.form__validation{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.label__form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 60%;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+.label__value{
+    color: #fff;
+    user-select: none;
+}
+.form__input{
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding-left: 10px;
+    height: 30px;
+    color: #000;
+    font-family: Roboto;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+.form__textarea{
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px;
+    height: 200px;
+    color: #333;
+    font-family: Roboto;
+    font-weight: 700;
+    outline: none;
+    border: none;   
+}
+.info__error-container{
+    display: none;
+    padding: 5px;
+    background-color: #c00;
+}
+.info__error-container-active{
+    display: block;
+}
+.info__error{
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: none;
+}
+.form__input-true{
+    border: 1px solid #0c0;
+}
+.form__input-false{
+    border: 1px solid #c00;
+}
+
+.btn__submit-container{
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    justify-content: center;
+}
+.btn__submit{
+    width: 300px;
+    height: 40px;
+    color: #fff5;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btn__submit-active{
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btn__submit-active:active{
+    background-color: #ccc;
+}
+
+/* SPEECH */
+.speech__container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 80%;
+    align-items: center;
+}
+.speech__selector-container{
+    margin: 15px 0;
+    width: 300px;
+    height: 30px;
+}
+.speech__text{
+    padding: 20px;
+    width: 700px;
+    height: 250px;
+    font-size: 14px;
+}
+.play__narrator{
+    margin: 20px 0;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
 }

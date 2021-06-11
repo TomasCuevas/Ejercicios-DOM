@@ -18,13 +18,9 @@ export default function smartVideoVisibility() {
                 let video = entry.target;
                 video.play();
                 
-                d.addEventListener("visibilitychange",(e) => {
-                    if (d.visibilityState === "visible") {
-                        video.play()
-                    } else {
-                        video.pause()
-                    }
-                })
+                d.addEventListener("visibilitychange",(e) => d.visibilityState === "visible" 
+                ? video.play() 
+                : video.pause())
             } else {
                 video.pause();
             }

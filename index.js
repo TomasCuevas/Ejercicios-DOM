@@ -6,8 +6,10 @@ import applyIntersection from "./modulos/intersectionObserver.js";
 import applySlider from "./modulos/slider.js";
 import smartVideoVisibility from "./modulos/smartVideo.js";
 import sorteoDigital from "./modulos/sorteo.js";
+import validarFormulario from "./modulos/validarFormulario.js";
 import microphone from "./modulos/webCam.js";
 import {responsiveMedia} from "/modulos/responsiveDesing.js";
+import narrator from "./modulos/narrador.js";
 
 document.addEventListener("click",(e) => {
     if (e.target.matches("#icon__bar")) {
@@ -44,6 +46,7 @@ document.addEventListener("DOMContentLoaded",() => {
     applySlider();
     applyIntersection();
     smartVideoVisibility();
+    validarFormulario();
 })
 
 const $SMARTS_VIOEO = document.querySelectorAll("[data-smart-video]")
@@ -55,3 +58,4 @@ $SMARTS_VIOEO.forEach(el => {
 
 networkStatus();
 microphone()
+narrator();

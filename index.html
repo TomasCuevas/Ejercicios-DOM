@@ -34,9 +34,8 @@
             <a href="#section__thirteen" data-item class="nav__item">Smart Video</a>
             <a href="#section__fourteen" data-item class="nav__item">Smart Video 2</a>
             <a href="#section__fiveteen" data-item class="nav__item">Smart Video 3</a>
-            <a href="#section__thirteen" data-item class="nav__item">Section 16</a>
-            <a href="#section__fourteen" data-item class="nav__item">Section 17</a>
-            <a href="#section__fiveteen" data-item class="nav__item">Section 18</a>
+            <a href="#section__sixteen" data-item class="nav__item">Validacion de Formulario</a>
+            <a href="#section__seventeen" data-item class="nav__item">Narrador</a>
         </section>
     </header>
 
@@ -115,6 +114,7 @@
         <!-- SECTION 7 -->
         <section id="section__seven" data-section data-darkmode-section class="section__background">
             <h2 class="subtitle" data-darkmode-subtitle>Deteccion de RED</h2>
+            <p class="paragraph">Avisa el estado de tu conexion. Detecta si pierdes conexion o si la retomas.</p>
         </section>
         <!-- SECTION 8 -->
         <section id="section__eight" data-section data-darkmode-section class="section__background">
@@ -232,6 +232,56 @@
                     </div>
                 </div>
             </section>
+            <!-- SECTION 16 -->
+            <section id="section__sixteen" data-section data-darkmode-section class="section__background">
+                <h2 class="subtitle" data-darkmode-subtitle>Validacion de Formulario</h2>
+                <div class="formulario__container">
+                    <form id="form__bottom" class="form__validation">
+                        <label class="label__form">
+                            <span id="span__name" class="label__value">Ingresa tu nombre</span>
+                            <input id="input__name" data-form-input type="text" class="form__input" name="name" autocomplete="off">
+                            <div id="name__info" class="info__error-container">
+                                <p class="info__error">No puede contener numeros o signos. Maximo 30 caracteres.</p>
+                            </div>
+                        </label>
+                        <label class="label__form">
+                            <span id="span__email" class="label__value">Ingresa tu correo</span>
+                            <input id="input__email" data-form-input type="text" class="form__input" name="email" autocomplete="off">
+                            <div id="email__info" class="info__error-container">
+                                <p class="info__error">El correo ingresado debe contener el siguiente formato: (ejemplo@ejemplo.ejemplo)</p>
+                            </div>
+                        </label>
+                        <label class="label__form">
+                            <span id="span__matter" class="label__value">Asunto a tratar</span>
+                            <input id="input__matter" data-form-input type="text" class="form__input" name="matter" autocomplete="off">
+                            <div id="matter__info" class="info__error-container">
+                                <p class="info__error">El asunto debe contener 30 caracteres como maximo y 8 como minimo.</p>
+                            </div>
+                        </label>
+                        <label class="label__form">
+                            <span id="span__message" class="label__value">Ingresa un mensaje</span>
+                            <textarea id="input__message" data-form-input class="form__textarea" name="message" autocomplete="off"></textarea>
+                            <div id="message__info" class="info__error-container">
+                                <p class="info__error">El mensaje debe tener 300 caracteres como maximo y 10 como minimo.</p>
+                            </div>
+                        </label>
+                        <div class="btn__submit-container">
+                            <button id="btn__submit" type="button" class="btn__submit">Click para enviar Formulario</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- SECTION 17 -->
+            <section id="section__seventeen" data-section data-darkmode-section class="section__background">
+                <h2 class="subtitle" data-darkmode-subtitle>Narrador</h2>
+                <div class="speech__container">
+                    <select id="speech__selector-container" class="speech__selector-container">
+                        <option>--- Eligue una voz ---</option>
+                    </select>
+                    <textarea name="speech" id="speech__text" class="speech__text" placeholder="Ingresa un texto"></textarea>
+                    <button id="play__narrator" class="play__narrator" type="submit">Escuchar texto ingresado</button>
+                </div>
+            </section>
 
     </main>
 
@@ -247,6 +297,9 @@
     <script type="module" src="modulos/slider.js"></script>
     <script type="module" src="modulos/intersectionObserver.js"></script>
     <script type="module" src="modulos/smartVideo.js"></script>
+    <script type="module" src="modulos/validarFormulario.js"></script>
+    <script type="module" src="modulos/expresionesRegulares.js"></script>
+    <script type="module" src="modulos/narrador.js"></script>
     <script src="modulos/time.js"></script>
     <script src="modulos/keyEvent.js"></script>
     <script src="modulos/cuentaRegresiva.js"></script>
